@@ -3,8 +3,10 @@ from nltk.chat.util import Chat, reflections
 
 pairs = [
     [r"hi|hello|hey",["Hello!", "Hey there!", "Hi!"]],
-    [r"how are you|how are you doing",["I'm just a chatbot, but I'm here to help!", "I'm doing well, thank you for asking."]],
-    [r"what's your name|who are you",["I'm a simple chatbot.", "Call me ChatBot."]]
+    [r"how are you",["I'm doing well, thank you for asking."]],
+    [r"how are you doing|what's your function|what your function|what is your function|your function?",
+    ["I'm just a chatbot, but I'm here to help!"]],
+    [r"what's your name|what is your name|Your name?|who are you",["I'm a simple chatbot.", "Call me ChatBot."]]
 ]
 
 def default_response(input_text):
