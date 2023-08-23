@@ -1,6 +1,3 @@
-Question : woi
-response : woi
-
 Question : siapa nama kamu
 response : nama saya Symple chatbot
 
