@@ -1,6 +1,12 @@
+Question : woi
+Response : woi
+
 Question : siapa nama kamu
-response : nama saya Symple chatbot
+Response : nama saya Symple chatbot
 
 Question : umur?
-response : I'm ageless, I'm a creation of code!
+Response : I'm ageless, I'm a creation of code!
+
+Question : siapa
+Response : siapa apa?
 
