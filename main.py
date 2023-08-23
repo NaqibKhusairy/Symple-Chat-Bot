@@ -1,5 +1,6 @@
 import nltk
 from nltk.chat.util import Chat, reflections
+import os
 
 pairs = [
     [r"hi|hello|hey", ["Hello!", "Hey there!", "Hi!"]],
@@ -60,6 +61,8 @@ print("Hi! I'm your simple chatbot. You can chat or ask anything to me. Type 'qu
 print()
 
 while True:
+    if not os.path.exists("custom_responses.txt"):
+        open("custom_responses.txt", "w").close()
     chatbot = Chat(pairs + load_pairs_from_file("custom_responses.txt"), reflections)
     user_input = input("You: ")
     
