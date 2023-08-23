@@ -20,6 +20,7 @@ def default_response(input_text):
     pairs.append([input_text, [new_response]])
     save_pairs_to_file("custom_responses.txt", [[input_text, [new_response]]])
     print("Chatbot: Thanks for teaching me!")
+    return new_response
 
 def handle_pornography(input_text):
     forbidden_words = ["pornography", "adult content", "explicit material", "sexual content", "sex"]
@@ -53,6 +54,7 @@ def load_pairs_from_file(filename):
             else:
                 i += 1
     return loaded_pairs
+
 
 print("Hi! I'm your simple chatbot. You can chat or ask anything to me. Type 'quit' to exit.")
 print()
